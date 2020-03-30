@@ -4,17 +4,7 @@
 
 <html lang="en">
 <head>
-  <!-- set active page https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page/26819796 -->
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
-            }
-        });
-    });
-</script>
+
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +23,7 @@
       {% for item in site.data.navigation %}
         <li>
           {% assign d = item.link | append:'/' %}
-          <a href="{{ item.link }}" {% if page.url == d %}class="text-white"{% endif %}>
+          <a href="{{ item.link }}" {% if page.url == d or page.url == item.link %}class="active text-white"{% endif %}>
           {{item.name}}
           </a>
         </li>
