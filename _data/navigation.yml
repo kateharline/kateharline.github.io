@@ -1,7 +1,7 @@
 - name: Intro
   link: /
-- name: Research
-  link: /research
+# - name: Research
+#   link: /research
 - name: Code
   link: /code
 - name: CV
