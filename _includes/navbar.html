@@ -30,13 +30,8 @@
       <a class="navbar-brand" >Kate Harline</a>
     </div> -->
     <ul class="nav navbar-nav">
-<!--       <li><a href="{{ site.url }}{{ site.baseurl | append:'/' }}">Intro</a></li>
-
-      <li><a href="{{ site.url }}{{ site.baseurl | append:'/research' }}" {% if page.url == '/research/' %}class="text-white"{% endif%}>Research</a></li>
-      <li><a href="{{ site.url }}{{ site.baseurl | append:'/code' }}" {% if page.url == '/code/' %}class="text-white"{% endif%}>Code</a></li>
-      <li><a href="{{ site.url }}{{ site.baseurl | append:'/cv' }}" {% if page.url == '/cv/' %}class="text-white"{% endif%}>CV</a></li> -->
-         {% for item in site.data.navigation %}
-         <li>
+      {% for item in site.data.navigation %}
+        <li>
           {% assign d = item.link | append:'/' %}
           <a href="{{ item.link }}" {% if page.url == d %}class="text-white"{% endif %}>
           {{item.name}}
