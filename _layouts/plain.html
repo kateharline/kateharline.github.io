@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="min-height-full">
   <head>
@@ -12,20 +13,13 @@
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #000000 !important"{% endif %}>
 
-{% if site.layout == 'stacked' %}
-  <div class="container-lg py-6 p-responsive text-center">
 
 
-    <div class="container-md f4 text-left border rounded-2 bg-white p-3 p-sm-5 mt-6">
-      <p class="f5"><a href="/" class="d-flex flex-items-center">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:#000000 aria-label:Home %}Home</a></p>
-      <h1 class="f00-light lh-condensed mb-5">{{ page.title }}</h1>
-      {{ content }}
-    </div>
-  </div>
-{% else %}
-  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
-
-
+    <div class="flex-justify-center" {% if site.style == 'dark' %}style="background-color: #000000 !important"{% endif %}>
+      <div class="mx-auto">
+        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %}">
+  <!--           <p class="f5"><a href="{{ site.url }}{{ site.baseurl | append:'/' }}" class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a></p> -->
             <h1 class="f00-light lh-condensed mb-5">{{ page.title }}</h1>
             {{ content }}
             {% if page.url == '/code/' %}{% include projects.html %}{% endif %}
@@ -34,4 +28,6 @@
       </div>
     </div>
   </div>
-{% endif %}
+
+
+{% include footer.html %}
