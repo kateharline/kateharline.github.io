@@ -1,5 +1,5 @@
 layout: sidebar
-style: dark
+style: light
 
 plugins:
   - jekyll-octicons
@@ -40,7 +40,7 @@ social_media:
   gscholar: citations?user=dR6qLhMAAAAJ&hl=en
   orcid: 0000-0002-4150-1165
   github: kateharline
-  # instagram: kitehighline
+  instagram: yogi_saurus
   # keybase: your_username
 
 
