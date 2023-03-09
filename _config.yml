@@ -1,10 +1,13 @@
 layout: sidebar
 style: light
 
+remote_theme: pages-themes/minimal@v0.2.0
+
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+  - jekyll-remote-theme
 
 permalink: /:year/:month/:day/:title/
 
