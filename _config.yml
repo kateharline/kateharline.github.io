@@ -1,6 +1,12 @@
 layout: sidebar
 style: light
 
+# Displayed name and business address. Set here rather than read from the
+# GitHub profile (site.github.owner.name), so the site controls how the name
+# is spelled without depending on the account's display name.
+full_name: Katharine Harline
+business_address: 22 NE 2nd Ave, Apt 1107, Portland, OR 97232
+
 remote_theme: pages-themes/minimal@v0.2.0
 
 plugins:

@@ -1,2 +1,9 @@
+  {% if site.business_address %}
+    <footer class="container-lg p-responsive py-4 text-center border-top border-gray-light">
+      <address class="f6 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}" style="font-style: normal;">
+        {{ site.business_address }}
+      </address>
+    </footer>
+  {% endif %}
   </body>
 </html>
